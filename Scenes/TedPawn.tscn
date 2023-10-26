@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://curg1s6yuc6f4"]
+
+[ext_resource type="Texture2D" uid="uid://f074gg5das5u" path="res://Sprites2D/icon.svg" id="1_amv1y"]
+[ext_resource type="Script" path="res://GDScripts/PawnBodySpriteControl.gd" id="2_vmb2e"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(532, 299)
+texture = ExtResource("1_amv1y")
+script = ExtResource("2_vmb2e")
