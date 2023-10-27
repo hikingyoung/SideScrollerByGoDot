@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://by7errrtwnwnn"]
+
+[ext_resource type="Texture2D" uid="uid://f074gg5das5u" path="res://Sprites2D/icon.svg" id="1_wbkiq"]
+[ext_resource type="Script" path="res://GDScripts/PingPongPlayer.gd" id="2_i6va6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bqe4i"]
+size = Vector2(44, 164)
+
+[node name="Player" type="Area2D"]
+script = ExtResource("2_i6va6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.36, 1.28)
+texture = ExtResource("1_wbkiq")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(1.04, 1)
+shape = SubResource("RectangleShape2D_bqe4i")

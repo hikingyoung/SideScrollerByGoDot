@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dce1phhhc0np"]
+
+[ext_resource type="Script" path="res://GDScripts/ScorePlayer1.gd" id="1_jds51"]
+[ext_resource type="Script" path="res://GDScripts/ScorePlayer2.gd" id="2_nxuvq"]
+
+[node name="Score" type="Node"]
+metadata/_edit_vertical_guides_ = [100.0, 1052.0]
+metadata/_edit_horizontal_guides_ = [100.0]
+
+[node name="Player1" type="Label" parent="."]
+offset_left = 100.0
+offset_top = 100.0
+offset_right = 140.0
+offset_bottom = 123.0
+script = ExtResource("1_jds51")
+
+[node name="Player2" type="Label" parent="."]
+offset_left = 1012.0
+offset_top = 100.0
+offset_right = 1052.0
+offset_bottom = 123.0
+script = ExtResource("2_nxuvq")
