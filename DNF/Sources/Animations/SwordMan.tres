@@ -1,0 +1,133 @@
+[gd_resource type="SpriteFrames" load_steps=18 format=3 uid="uid://b16xnjsq8adc8"]
+
+[ext_resource type="Texture2D" uid="uid://da3muktkau8l3" path="res://DNF/Sources/AnimTiles/Human/SwordMan_Sprites.png" id="1_gptek"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bc0ph"]
+atlas = ExtResource("1_gptek")
+region = Rect2(0, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rgf81"]
+atlas = ExtResource("1_gptek")
+region = Rect2(50, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gjcs"]
+atlas = ExtResource("1_gptek")
+region = Rect2(100, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jr3eb"]
+atlas = ExtResource("1_gptek")
+region = Rect2(150, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3o0pm"]
+atlas = ExtResource("1_gptek")
+region = Rect2(0, 74, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uwbal"]
+atlas = ExtResource("1_gptek")
+region = Rect2(50, 74, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aqr2h"]
+atlas = ExtResource("1_gptek")
+region = Rect2(100, 74, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gxjxm"]
+atlas = ExtResource("1_gptek")
+region = Rect2(150, 74, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_trhg3"]
+atlas = ExtResource("1_gptek")
+region = Rect2(50, 111, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_17fn8"]
+atlas = ExtResource("1_gptek")
+region = Rect2(100, 111, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8l24s"]
+atlas = ExtResource("1_gptek")
+region = Rect2(50, 37, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ippv2"]
+atlas = ExtResource("1_gptek")
+region = Rect2(100, 37, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ofmm5"]
+atlas = ExtResource("1_gptek")
+region = Rect2(150, 37, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4kn5x"]
+atlas = ExtResource("1_gptek")
+region = Rect2(200, 37, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nyei0"]
+atlas = ExtResource("1_gptek")
+region = Rect2(250, 37, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4w87o"]
+atlas = ExtResource("1_gptek")
+region = Rect2(300, 37, 50, 37)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bc0ph")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rgf81")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gjcs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jr3eb")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3o0pm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uwbal")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aqr2h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gxjxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_trhg3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_17fn8")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8l24s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ippv2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ofmm5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4kn5x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nyei0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4w87o")
+}],
+"loop": true,
+"name": &"Run",
+"speed": 5.0
+}]

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://cng7hjad2yss2"]
+
+[ext_resource type="PackedScene" uid="uid://b2d6blp4psev7" path="res://Scenes/tile_map.tscn" id="1_sjepm"]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2(2, 2)
+
+[node name="TileMap" parent="." instance=ExtResource("1_sjepm")]
