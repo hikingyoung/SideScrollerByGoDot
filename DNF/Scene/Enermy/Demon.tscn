@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ef37g6e2335"]
+
+[ext_resource type="SpriteFrames" uid="uid://cfmrsohmyvrkm" path="res://DNF/Source/Animation/Monster/Demon/Demon.tres" id="1_op0ai"]
+
+[node name="Demon" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_op0ai")
+animation = &"Idle"
+autoplay = "Attack"
+frame_progress = 0.55439

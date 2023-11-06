@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7su2i46rswua"]
+
+[ext_resource type="SpriteFrames" uid="uid://dsv8m7bssynd1" path="res://DNF/Source/Animation/Human/Shooter/Shooter.tres" id="1_uxm53"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_uxm53")
+animation = &"Attack_Default"

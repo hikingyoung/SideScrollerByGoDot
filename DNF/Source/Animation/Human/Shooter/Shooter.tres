@@ -1,0 +1,75 @@
+[gd_resource type="SpriteFrames" load_steps=16 format=3 uid="uid://dsv8m7bssynd1"]
+
+[ext_resource type="Texture2D" uid="uid://c1soajtrd8ftl" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-jump-00.png" id="1_fonwc"]
+[ext_resource type="Texture2D" uid="uid://5odkg3ei4i0k" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-jump-01.png" id="2_jctoh"]
+[ext_resource type="Texture2D" uid="uid://df75nut6t1vse" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-jump-02.png" id="3_ddbsv"]
+[ext_resource type="Texture2D" uid="uid://dbyxgsml56bm4" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-jump-03.png" id="4_62hcb"]
+[ext_resource type="Texture2D" uid="uid://cobup30ha3gp6" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-jump-04.png" id="5_6injg"]
+[ext_resource type="Texture2D" uid="uid://cnvxbquagqxnf" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-jump-05.png" id="6_m8u3t"]
+[ext_resource type="Texture2D" uid="uid://bsij3y4opki3m" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-00.png" id="7_ilnuo"]
+[ext_resource type="Texture2D" uid="uid://cf300sf4ihky5" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-01.png" id="8_uejee"]
+[ext_resource type="Texture2D" uid="uid://b6ce8kaf8qms0" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-02.png" id="9_a83e8"]
+[ext_resource type="Texture2D" uid="uid://c7ii3ycxa7m0b" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-03.png" id="10_a1w4a"]
+[ext_resource type="Texture2D" uid="uid://b5m7pdc0gy6v6" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-04.png" id="11_kbo4j"]
+[ext_resource type="Texture2D" uid="uid://dvqoeu1huxa6x" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-05.png" id="12_pegrr"]
+[ext_resource type="Texture2D" uid="uid://cunjio3jmr3se" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-06.png" id="13_nupcl"]
+[ext_resource type="Texture2D" uid="uid://tr843yy4nurm" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-07.png" id="14_as2u6"]
+[ext_resource type="Texture2D" uid="uid://c0cqpo1atvnj0" path="res://DNF/Source/Animation/Human/Shooter/Individual Sprites/adventurer-bow-08.png" id="15_xmd8s"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_fonwc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jctoh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ddbsv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_62hcb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_6injg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_m8u3t")
+}],
+"loop": true,
+"name": &"Attack_Air",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_ilnuo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uejee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_a83e8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_a1w4a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_kbo4j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_pegrr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nupcl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_as2u6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_xmd8s")
+}],
+"loop": true,
+"name": &"Attack_Default",
+"speed": 5.0
+}]

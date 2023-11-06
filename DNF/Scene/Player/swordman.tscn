@@ -1,12 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://1dil7q0o01kl"]
+[gd_scene load_steps=3 format=3 uid="uid://1dil7q0o01kl"]
 
-[ext_resource type="SpriteFrames" uid="uid://b16xnjsq8adc8" path="res://DNF/Source/Animation/Human/SwordMan.tres" id="1_t56tj"]
+[ext_resource type="Script" path="res://DNF/Script/SwordmanRootNode.gd" id="1_gwils"]
+[ext_resource type="SpriteFrames" uid="uid://b16xnjsq8adc8" path="res://DNF/Source/Animation/Human/SwordMan/SwordMan.tres" id="1_jab0d"]
 
 [node name="Swordman" type="Node2D"]
 position = Vector2(570, 290)
-scale = Vector2(10, 10)
+scale = Vector2(3, 3)
+script = ExtResource("1_gwils")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = ExtResource("1_t56tj")
-animation = &"Idle"
-autoplay = "Idle"
+sprite_frames = ExtResource("1_jab0d")
+animation = &"Idle_Normal"
+autoplay = "Idle_Normal"

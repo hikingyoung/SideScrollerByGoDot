@@ -1,0 +1,62 @@
+https://rvros.itch.io/animated-pixel-hero
+Pixel art animated character for platformer/sidescroll games with 39 animations:
+
+[39 animations]:
+
+Idle1
+Idle2
+Run
+Crouch
+Slide
+Attack1
+Attack2
+Attack3
+Jump
+Fall
+Somersault
+Corner Grab
+Corner Climb
+Corner Jump
+Sword Draw
+Sword Sheathe
+Wall Slide
+Wall Climb
+Hurt
+Die
+Water Idle
+Water Move
+Cast Spell
+Use Item
+Air Attack1
+Air Attack2
+Air Attack3
+ Punch1 
+Punch2
+Punch3
+Kick1
+Kick 2
+Drop Kick 
+Walk
+Knocked Down
+Recover
+Run2
+Crouch Walk
+ Wall Run
+
+
+[Sprite dimension]: 50x37 px
+
+Individual sprite, sprite sheet and the original .aseprite file included
+
+[License Permissions]:
+
+You can do:
+
+- You can use this asset for personal and commercial purpose. Credit is not required but would be appreciated. 
+
+- Modify to suit your needs.
+
+You cannot do:
+
+- Resell/redistribute this asset.
+
