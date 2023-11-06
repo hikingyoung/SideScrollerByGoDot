@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://1dil7q0o01kl"]
+
+[ext_resource type="SpriteFrames" uid="uid://b16xnjsq8adc8" path="res://DNF/Source/Animation/Human/SwordMan.tres" id="1_t56tj"]
+
+[node name="Swordman" type="Node2D"]
+position = Vector2(570, 290)
+scale = Vector2(10, 10)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_t56tj")
+animation = &"Idle"
+autoplay = "Idle"
