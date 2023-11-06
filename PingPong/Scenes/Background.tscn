@@ -1,13 +1,13 @@
 [gd_scene load_steps=10 format=3 uid="uid://ub8xgtug4pr8"]
 
-[ext_resource type="Texture2D" uid="uid://f074gg5das5u" path="res://Sprites2D/icon.svg" id="1_8odcs"]
-[ext_resource type="Script" path="res://GDScripts/Area2D_Top.gd" id="2_vqo52"]
-[ext_resource type="Script" path="res://GDScripts/Area2D_Bottom.gd" id="3_d4q6k"]
-[ext_resource type="Script" path="res://GDScripts/Area2D_Left.gd" id="3_nqow1"]
-[ext_resource type="Script" path="res://GDScripts/Area2D_Right.gd" id="4_hq5ac"]
-[ext_resource type="PackedScene" uid="uid://ca4yl11sufnr3" path="res://Scenes/Ball.tscn" id="5_5ah37"]
-[ext_resource type="PackedScene" uid="uid://dce1phhhc0np" path="res://Scenes/score.tscn" id="6_wna68"]
-[ext_resource type="PackedScene" uid="uid://by7errrtwnwnn" path="res://Scenes/player.tscn" id="8_gprqe"]
+[ext_resource type="Texture2D" uid="uid://f074gg5das5u" path="res://PingPong/Sprites2D/icon.svg" id="1_fpyur"]
+[ext_resource type="Script" path="res://PingPong/GDScripts/Area2D_Top.gd" id="2_r4bw2"]
+[ext_resource type="Script" path="res://PingPong/GDScripts/Area2D_Bottom.gd" id="3_q5r5e"]
+[ext_resource type="Script" path="res://PingPong/GDScripts/Area2D_Left.gd" id="4_v2juf"]
+[ext_resource type="PackedScene" uid="uid://ca4yl11sufnr3" path="res://PingPong/Scenes/Ball.tscn" id="5_5ah37"]
+[ext_resource type="Script" path="res://PingPong/GDScripts/Area2D_Right.gd" id="5_7qnci"]
+[ext_resource type="PackedScene" uid="uid://dce1phhhc0np" path="res://PingPong/Scenes/score.tscn" id="6_wna68"]
+[ext_resource type="PackedScene" uid="uid://by7errrtwnwnn" path="res://PingPong/Scenes/player.tscn" id="8_gprqe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_16p7n"]
 
@@ -21,12 +21,12 @@ color = Color(0.137255, 0.137255, 0.137255, 1)
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(576, 318)
 scale = Vector2(0.0399976, 7.48)
-texture = ExtResource("1_8odcs")
+texture = ExtResource("1_fpyur")
 
 [node name="Area2D_Top" type="Area2D" parent="."]
 position = Vector2(577, -10)
 scale = Vector2(59.2, 1)
-script = ExtResource("2_vqo52")
+script = ExtResource("2_r4bw2")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Top"]
 shape = SubResource("RectangleShape2D_16p7n")
@@ -34,7 +34,7 @@ shape = SubResource("RectangleShape2D_16p7n")
 [node name="Area2D_Bottom" type="Area2D" parent="."]
 position = Vector2(578, 658)
 scale = Vector2(59.36, 1)
-script = ExtResource("3_d4q6k")
+script = ExtResource("3_q5r5e")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Bottom"]
 shape = SubResource("RectangleShape2D_16p7n")
@@ -42,7 +42,7 @@ shape = SubResource("RectangleShape2D_16p7n")
 [node name="Area2D_Left" type="Area2D" parent="."]
 position = Vector2(-10, 328)
 scale = Vector2(1, 33.588)
-script = ExtResource("3_nqow1")
+script = ExtResource("4_v2juf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Left"]
 shape = SubResource("RectangleShape2D_16p7n")
@@ -50,7 +50,7 @@ shape = SubResource("RectangleShape2D_16p7n")
 [node name="Area2D_Right" type="Area2D" parent="."]
 position = Vector2(1162, 317)
 scale = Vector2(1, 33.588)
-script = ExtResource("4_hq5ac")
+script = ExtResource("5_7qnci")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_Right"]
 shape = SubResource("RectangleShape2D_16p7n")

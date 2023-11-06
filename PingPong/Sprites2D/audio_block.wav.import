@@ -3,12 +3,12 @@
 importer="wav"
 type="AudioStreamWAV"
 uid="uid://gb4fvk3l3ils"
-path="res://.godot/imported/audio_block.wav-3ac71a6561f7df9861b123b164f52ed2.sample"
+path="res://.godot/imported/audio_block.wav-9a82f649aff07b76764b164973ad59e2.sample"
 
 [deps]
 
-source_file="res://Sprites2D/audio_block.wav"
-dest_files=["res://.godot/imported/audio_block.wav-3ac71a6561f7df9861b123b164f52ed2.sample"]
+source_file="res://PingPong/Sprites2D/audio_block.wav"
+dest_files=["res://.godot/imported/audio_block.wav-9a82f649aff07b76764b164973ad59e2.sample"]
 
 [params]
 

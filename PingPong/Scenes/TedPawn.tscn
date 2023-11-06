@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://curg1s6yuc6f4"]
+
+[ext_resource type="Texture2D" uid="uid://f074gg5das5u" path="res://PingPong/Sprites2D/icon.svg" id="1_kjxdt"]
+[ext_resource type="Script" path="res://PingPong/GDScripts/PawnBodySpriteControl.gd" id="2_uvnft"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(532, 299)
+texture = ExtResource("1_kjxdt")
+script = ExtResource("2_uvnft")

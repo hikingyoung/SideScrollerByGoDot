@@ -8,6 +8,6 @@ scale = Vector2(10, 10)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = ExtResource("1_jeoam")
-animation = &"Run"
+animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.256881
+frame_progress = 0.499728

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://g4iwjgngn5ie"
-path="res://.godot/imported/Tilemap Dungeon original size.png-2692e135f2f30ae502d7c281b0ff0806.ctex"
+uid="uid://f074gg5das5u"
+path="res://.godot/imported/icon.svg-7e3b9f3c604921aa3f1e4d65964ea002.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites2D/Tilemap Dungeon original size.png"
-dest_files=["res://.godot/imported/Tilemap Dungeon original size.png-2692e135f2f30ae502d7c281b0ff0806.ctex"]
+source_file="res://PingPong/Sprites2D/icon.svg"
+dest_files=["res://.godot/imported/icon.svg-7e3b9f3c604921aa3f1e4d65964ea002.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

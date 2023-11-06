@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=3 uid="uid://c7jumrfrxlp5o"]
+
+[ext_resource type="Script" path="res://PingPong/GDScripts/SplitScreenTo2Viewport.gd" id="1_mxs0w"]
+[ext_resource type="Texture2D" uid="uid://f074gg5das5u" path="res://PingPong/Sprites2D/icon.svg" id="2_pfpsu"]
+
+[node name="HBoxContainer" type="HBoxContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_mxs0w")
+
+[node name="SubViewportContainer_Left" type="SubViewportContainer" parent="."]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer_Left"]
+handle_input_locally = false
+render_target_update_mode = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="SubViewportContainer_Left/SubViewport"]
+texture = ExtResource("2_pfpsu")
+
+[node name="SubViewportContainer_Right" type="SubViewportContainer" parent="."]
+layout_mode = 2
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer_Right"]
+handle_input_locally = false
+render_target_update_mode = 4

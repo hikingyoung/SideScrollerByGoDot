@@ -11,14 +11,14 @@ config_version=5
 [application]
 
 config/name="Side Scroller Go Dot"
-run/main_scene="res://Scenes/Background.tscn"
+run/main_scene="res://PingPong/Scenes/Background.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 boot_splash/bg_color=Color(0.141176, 0.141176, 0.141176, 1)
-config/icon="res://Sprites2D/icon.svg"
+config/icon="res://PingPong/Sprites2D/icon.svg"
 
 [autoload]
 
-TedSingle="*res://GDScripts/TedSingle.gd"
+TedSingle="*res://PingPong/GDScripts/TedSingle.gd"
 
 [display]
 

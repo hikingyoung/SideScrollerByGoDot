@@ -1,16 +1,13 @@
-[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://drpbfcw7vkbyb"]
+[gd_resource type="TileSet" load_steps=4 format=3 uid="uid://drpbfcw7vkbyb"]
 
-[ext_resource type="Texture2D" uid="uid://g4iwjgngn5ie" path="res://Sprites2D/Tilemap Dungeon original size.png" id="1_5aete"]
+[ext_resource type="Texture2D" uid="uid://g4iwjgngn5ie" path="res://DNF/Sources/MapTiles/Tilemap Dungeon original size.png" id="1_6v78b"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_fwt2q"]
 tile_data = PackedInt32Array(0, 786433, 14, 65536, 786433, 15, 1, 851969, 14, 65537, 851969, 15)
 
-[sub_resource type="TileMapPattern" id="TileMapPattern_mi7j4"]
-tile_data = PackedInt32Array(0, 1441793, 8, 65536, 1441793, 9)
-
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_y4d77"]
 resource_name = "TheDungeon"
-texture = ExtResource("1_5aete")
+texture = ExtResource("1_6v78b")
 0:0/0 = 0
 0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 0:0/0/physics_layer_0/angular_velocity = 0.0
@@ -1850,4 +1847,3 @@ terrain_set_0/terrain_0/name = "TedCustom"
 terrain_set_0/terrain_0/color = Color(0.501961, 0.345098, 0.25098, 1)
 sources/1 = SubResource("TileSetAtlasSource_y4d77")
 pattern_0 = SubResource("TileMapPattern_fwt2q")
-pattern_1 = SubResource("TileMapPattern_mi7j4")
