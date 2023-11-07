@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dw4k67kiw74qq"]
+[gd_scene load_steps=7 format=3 uid="uid://dw4k67kiw74qq"]
 
 [ext_resource type="Script" path="res://DNF/Script/SwordManRootNode_Foot.gd" id="1_rnj0e"]
 [ext_resource type="SpriteFrames" uid="uid://b16xnjsq8adc8" path="res://DNF/Source/Animation/Human/SwordMan/SwordMan.tres" id="1_x3x86"]
 [ext_resource type="Script" path="res://DNF/Script/SwordManChildNode_Body.gd" id="2_bjl5q"]
+[ext_resource type="Script" path="res://DNF/Script/Player/State.gd" id="4_83h36"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yfd3d"]
 size = Vector2(20, 5.50562)
@@ -33,3 +34,8 @@ sprite_frames = ExtResource("1_x3x86")
 animation = &"Idle_Normal"
 autoplay = "Idle_Normal"
 frame_progress = 0.6619
+
+[node name="StateMachine" type="Node" parent="."]
+
+[node name="Idle" type="Node" parent="StateMachine"]
+script = ExtResource("4_83h36")
