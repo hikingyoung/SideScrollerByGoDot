@@ -1,14 +1,35 @@
-[gd_scene load_steps=3 format=3 uid="uid://1dil7q0o01kl"]
+[gd_scene load_steps=6 format=3 uid="uid://dw4k67kiw74qq"]
 
-[ext_resource type="Script" path="res://DNF/Script/SwordmanRootNode.gd" id="1_gwils"]
-[ext_resource type="SpriteFrames" uid="uid://b16xnjsq8adc8" path="res://DNF/Source/Animation/Human/SwordMan/SwordMan.tres" id="1_jab0d"]
+[ext_resource type="Script" path="res://DNF/Script/SwordManRootNode_Foot.gd" id="1_rnj0e"]
+[ext_resource type="SpriteFrames" uid="uid://b16xnjsq8adc8" path="res://DNF/Source/Animation/Human/SwordMan/SwordMan.tres" id="1_x3x86"]
+[ext_resource type="Script" path="res://DNF/Script/SwordManChildNode_Body.gd" id="2_bjl5q"]
 
-[node name="Swordman" type="Node2D"]
-position = Vector2(570, 290)
-scale = Vector2(3, 3)
-script = ExtResource("1_gwils")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yfd3d"]
+size = Vector2(20, 5.50562)
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = ExtResource("1_jab0d")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_up6v2"]
+size = Vector2(11.3333, 29.7753)
+
+[node name="CharacterBody2D_Root_Foot" type="CharacterBody2D"]
+scale = Vector2(3, 3.56)
+script = ExtResource("1_rnj0e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_yfd3d")
+
+[node name="Area2D_PlayerBody" type="Area2D" parent="."]
+light_mask = 524288
+visibility_layer = 524288
+script = ExtResource("2_bjl5q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_PlayerBody"]
+position = Vector2(0, 2.80899)
+scale = Vector2(0.999999, 1)
+shape = SubResource("RectangleShape2D_up6v2")
+
+[node name="AnimatedSprite2D_Body" type="AnimatedSprite2D" parent="Area2D_PlayerBody"]
+sprite_frames = ExtResource("1_x3x86")
 animation = &"Idle_Normal"
 autoplay = "Idle_Normal"
+frame_progress = 0.6619

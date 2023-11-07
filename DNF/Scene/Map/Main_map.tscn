@@ -1,16 +1,44 @@
 [gd_scene load_steps=4 format=3 uid="uid://dbosb8nra1xkc"]
 
-[ext_resource type="PackedScene" uid="uid://cng7hjad2yss2" path="res://DNF/Scene/Map/SelfMade_Dungeon_Map.tscn" id="1_503yh"]
-[ext_resource type="PackedScene" uid="uid://ef37g6e2335" path="res://DNF/Scene/Enermy/Demon.tscn" id="2_txgc0"]
-[ext_resource type="PackedScene" uid="uid://dw4k67kiw74qq" path="res://DNF/Scene/Player/Example_CharacterBody2D.tscn" id="3_sk4cv"]
+[ext_resource type="PackedScene" uid="uid://dw4k67kiw74qq" path="res://DNF/Scene/Player/SwordMan.tscn" id="3_sk4cv"]
+[ext_resource type="Texture2D" uid="uid://bi073qvywotsu" path="res://DNF/Source/Sprite2D/DNFRoom.png" id="4_xw2su"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1ap8r"]
+size = Vector2(1250, 47)
 
 [node name="MainMap" type="Node2D"]
 
-[node name="TileMap" parent="." instance=ExtResource("1_503yh")]
-
-[node name="Demon" parent="." instance=ExtResource("2_txgc0")]
-z_as_relative = false
-position = Vector2(390, 268)
+[node name="BackgroundImage_Room" type="Sprite2D" parent="."]
+position = Vector2(611, 321)
+scale = Vector2(1.025, 0.86)
+texture = ExtResource("4_xw2su")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("3_sk4cv")]
-position = Vector2(242, 298)
+position = Vector2(255, 394)
+
+[node name="StaticBody2D_Bottom" type="StaticBody2D" parent="."]
+position = Vector2(575, 676)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D_Bottom"]
+shape = SubResource("RectangleShape2D_1ap8r")
+
+[node name="StaticBody2D2_Top" type="StaticBody2D" parent="."]
+visible = false
+position = Vector2(546, 245)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2_Top"]
+shape = SubResource("RectangleShape2D_1ap8r")
+
+[node name="StaticBody2D_Left" type="StaticBody2D" parent="."]
+position = Vector2(-26, 254)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D_Left"]
+shape = SubResource("RectangleShape2D_1ap8r")
+
+[node name="StaticBody2D_Right" type="StaticBody2D" parent="."]
+position = Vector2(1179, 335)
+rotation = 1.5708
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D_Right"]
+shape = SubResource("RectangleShape2D_1ap8r")
