@@ -10,3 +10,10 @@ func _ready():
 func _process(delta):
 	pass
 
+func enter():
+	#自有变量name，值为当前节点名，即Idle
+	#注意写法，中间没有空格
+	print("进入了状态%s"%name)
+
+func exit():
+	print("离开当前状态%s"%name)

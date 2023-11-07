@@ -1,24 +1,17 @@
 class_name  State
 extends Node
 #一个指针变量，可以是任意类型；在赋值后会确定唯一类型
-var state_machine = null
-
+var state_machine:StateMachine = null
+var player:Player = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
-func _input(event):
-	pass
-	
-func _physics_process(delta):
-	pass
-
+#————————————————————
+#下面四个方法都用StaticMachine来间接地统一管理
+#————————————————————
 #进入此状态时要初始化或提前准备的工作
 func enter():
 	pass
@@ -27,6 +20,12 @@ func enter():
 func exit():
 	pass
 	
-#处于当前状态时将一直执行的动作	
-func Loop():
+#处于这个状态时要一直更新的动作	
+#这里的update执行与否受状态机控制。
+#如果不自己写而是调用系统自身的 _process则不受控制而无法管理
+func update():
+	pass
+	
+#这个多用来处理输入事件
+func physics_update():
 	pass
