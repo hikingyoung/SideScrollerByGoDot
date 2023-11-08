@@ -1,11 +1,13 @@
-[gd_scene load_steps=9 format=3 uid="uid://dw4k67kiw74qq"]
+[gd_scene load_steps=11 format=3 uid="uid://dw4k67kiw74qq"]
 
 [ext_resource type="Script" path="res://DNF/Script/SwordManRootNode_Foot.gd" id="1_aqrs2"]
+[ext_resource type="Texture2D" uid="uid://c4e5nt24u6u2f" path="res://DNF/Source/Sprite2D/icon.svg" id="2_emilk"]
 [ext_resource type="Script" path="res://DNF/Script/SwordManChildNode_Body.gd" id="2_xevqd"]
 [ext_resource type="SpriteFrames" uid="uid://b16xnjsq8adc8" path="res://DNF/Source/Animation/Human/SwordMan/SwordMan.tres" id="3_bt81j"]
 [ext_resource type="Script" path="res://DNF/Script/Player/StateMachine.gd" id="4_y84ab"]
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordManIdle.gd" id="5_7fd11"]
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordManRun.gd" id="6_ots3m"]
+[ext_resource type="Script" path="res://DNF/Script/Player/swordman_jump.gd" id="7_c452x"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yfd3d"]
 size = Vector2(20, 5.50562)
@@ -21,6 +23,11 @@ script = ExtResource("1_aqrs2")
 position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_yfd3d")
 
+[node name="Sprite2D" type="Sprite2D" parent="CollisionShape2D"]
+self_modulate = Color(0, 0, 0, 1)
+scale = Vector2(0.119792, 0.0349368)
+texture = ExtResource("2_emilk")
+
 [node name="Area2D_PlayerBody" type="Area2D" parent="."]
 light_mask = 524288
 visibility_layer = 524288
@@ -33,9 +40,9 @@ shape = SubResource("RectangleShape2D_up6v2")
 
 [node name="AnimatedSprite2D_Body" type="AnimatedSprite2D" parent="Area2D_PlayerBody"]
 sprite_frames = ExtResource("3_bt81j")
-animation = &"Idle_Normal"
+animation = &"Idle_InBattle"
 autoplay = "Idle_Normal"
-frame_progress = 0.49975
+frame_progress = 0.7722
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource("4_y84ab")
@@ -44,5 +51,8 @@ default_state = NodePath("Idle")
 [node name="Idle" type="Node" parent="StateMachine"]
 script = ExtResource("5_7fd11")
 
-[node name="run" type="Node" parent="StateMachine"]
+[node name="Run" type="Node" parent="StateMachine"]
 script = ExtResource("6_ots3m")
+
+[node name="Jump" type="Node" parent="StateMachine"]
+script = ExtResource("7_c452x")

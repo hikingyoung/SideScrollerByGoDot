@@ -3,6 +3,29 @@ class_name StateMachine
 
 signal transitioned(new_state_name:String)
 
+#先设置一下常规的人物可能状态
+#————————————
+#处于地面，多指静止状态
+var is_on_floor = true
+#包括主动跳起和受击浮空
+var is_in_air = false
+#跳跃全过程，包括起跳和下落
+var is_jumping = false
+#特指跳跃的下落过程，包括从平台掉下
+var is_falling = false
+#战斗中，为否则是脱战
+var is_in_battle = false
+#主动攻击中，这里可以制作连招取消或被敌人破招等
+var is_attacking = false
+#受创硬直中，这里玩家受击失控，只能进行有限的操作，如草人，浮空调整等等
+var is_taking_hurt = false
+#倒地中
+var is_down_to_ground = false
+#死亡
+var is_dead = false
+#异常状态或被控制中
+var is_in_abnormal_state = false
+
 #下面这行得到的其实是Idle这个节点，因为返回绝对或相对路径，所以一定是String类型
 @export var default_state = NodePath()
 
@@ -20,14 +43,13 @@ func _ready():
 	#transitioned.connect(Callable(self, "TransitionTo"))
 	self.connect("transitioned", Callable(self, "TransitionTo"))
 	var AnimatedSprite2D_Node = get_node("../Area2D_PlayerBody/AnimatedSprite2D_Body")
-	
 	#给所有子组件内的state_machine指定对象为我
 	for child in get_children():
 		if child is State:
 			child.state_machine = self
 			child.player = owner
 			child.AnimatedSprite2D_Pawn = AnimatedSprite2D_Node
-	#调用一下默认状态的enter工作，执行一些初始化
+	#调用一下默认状态的enter工作，执行一些初始化。上面已经选定了默认是Idle
 	if current_state:
 		current_state.enter()
 	pass # Replace with function body.
@@ -41,7 +63,7 @@ func _process(delta):
 	current_state.update(delta)
 	pass
 
-func _physics_process(delta):
+func _physics_process(delta):	
 	current_state.physics_update(delta)
 	pass
 
@@ -53,6 +75,10 @@ func TransitionTo(newState:String):
 	#这里之前报错，因为后面获得的是节点，前面是State类的对象，类型不匹配
 	#但是现在又不报错了
 	var new_node = get_node(newState)
+	print("当前的状态是：")
+	print(current_state)
+	print("新的状态是：")
+	print(new_node)
 	if new_node:
 		current_state = new_node
 		current_state.enter()

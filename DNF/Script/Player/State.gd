@@ -11,12 +11,17 @@ var AnimatedSprite2D_Pawn:AnimatedSprite2D = null
 #下面四个方法都用StaticMachine来间接地统一管理
 #————————————————————
 #进入此状态时要初始化或提前准备的工作
+#记住，本程序只在enter里处理状态机的各种波尔量
 func enter():
-	pass
+	#自有变量name，值为当前节点名，即Idle
+	#注意写法，中间没有逗号
+	print("进入了状态%s" %name)
+	
 	
 #离开当前状态时要执行的工作，多是销毁、回收、复位等
 func exit():
-	pass
+	print("离开当前状态%s" %name)
+
 	
 #处于这个状态时要一直更新的动作	
 #这里的update执行与否受状态机控制。
