@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=3 uid="uid://dw4k67kiw74qq"]
+[gd_scene load_steps=9 format=3 uid="uid://dw4k67kiw74qq"]
 
 [ext_resource type="Script" path="res://DNF/Script/SwordManRootNode_Foot.gd" id="1_aqrs2"]
 [ext_resource type="Script" path="res://DNF/Script/SwordManChildNode_Body.gd" id="2_xevqd"]
 [ext_resource type="SpriteFrames" uid="uid://b16xnjsq8adc8" path="res://DNF/Source/Animation/Human/SwordMan/SwordMan.tres" id="3_bt81j"]
 [ext_resource type="Script" path="res://DNF/Script/Player/StateMachine.gd" id="4_y84ab"]
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordManIdle.gd" id="5_7fd11"]
+[ext_resource type="Script" path="res://DNF/Script/Player/SwordManRun.gd" id="6_ots3m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yfd3d"]
 size = Vector2(20, 5.50562)
@@ -34,7 +35,7 @@ shape = SubResource("RectangleShape2D_up6v2")
 sprite_frames = ExtResource("3_bt81j")
 animation = &"Idle_Normal"
 autoplay = "Idle_Normal"
-frame_progress = 0.6619
+frame_progress = 0.49975
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource("4_y84ab")
@@ -44,3 +45,4 @@ default_state = NodePath("Idle")
 script = ExtResource("5_7fd11")
 
 [node name="run" type="Node" parent="StateMachine"]
+script = ExtResource("6_ots3m")
