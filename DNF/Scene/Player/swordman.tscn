@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://dw4k67kiw74qq"]
+[gd_scene load_steps=16 format=3 uid="uid://dw4k67kiw74qq"]
 
 [ext_resource type="Script" path="res://DNF/Script/SwordManRootNode_Foot.gd" id="1_aqrs2"]
 [ext_resource type="Texture2D" uid="uid://bymer10hqpqfg" path="res://DNF/Source/Sprite2D/img_location.png" id="2_ab4x4"]
@@ -11,42 +11,53 @@
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordMan_Attack01_On_Floor.gd" id="9_exleo"]
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordMan_Attack02_On_Floor.gd" id="10_87s3y"]
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordMan_Attack03_On_Floor.gd" id="11_gmcab"]
+[ext_resource type="Script" path="res://DNF/Script/Player/swordman_hurt.gd" id="12_5uosk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yfd3d"]
 size = Vector2(20, 5.50562)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1to7y"]
+size = Vector2(20, 5.5955)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_up6v2"]
 size = Vector2(11.3333, 29.7753)
 
-[node name="CharacterBody2D_Root_Foot" type="CharacterBody2D"]
+[node name="CharacterBody2D_Root" type="CharacterBody2D"]
 scale = Vector2(3, 3.56)
 script = ExtResource("1_aqrs2")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D_Foot" type="CollisionShape2D" parent="."]
 position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_yfd3d")
 
-[node name="Location_Foot" type="Sprite2D" parent="CollisionShape2D"]
+[node name="Location_Foot" type="Sprite2D" parent="CollisionShape2D_Foot"]
 self_modulate = Color(0, 0.807843, 0.85098, 0.490196)
 scale = Vector2(0.039, 0.01)
 texture = ExtResource("2_ab4x4")
+
+[node name="Area2D_PlayerFoot" type="Area2D" parent="."]
+scale = Vector2(1, 1)
+
+[node name="Collision_1st" type="CollisionShape2D" parent="Area2D_PlayerFoot"]
+position = Vector2(0, 16)
+shape = SubResource("RectangleShape2D_1to7y")
 
 [node name="Area2D_PlayerBody" type="Area2D" parent="."]
 light_mask = 524288
 visibility_layer = 524288
 script = ExtResource("2_xevqd")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D_PlayerBody"]
+[node name="Collision_2nd" type="CollisionShape2D" parent="Area2D_PlayerBody"]
 position = Vector2(0, 2.80899)
 scale = Vector2(0.999999, 1)
 shape = SubResource("RectangleShape2D_up6v2")
 
 [node name="AnimatedSprite2D_Body" type="AnimatedSprite2D" parent="Area2D_PlayerBody"]
 sprite_frames = ExtResource("3_bt81j")
-animation = &"JumpAndFall"
+animation = &"Hurt"
 autoplay = "Idle_Normal"
-frame = 4
-frame_progress = 0.981104
+frame = 2
+frame_progress = 1.0
 
 [node name="StateMachine" type="Node" parent="."]
 script = ExtResource("4_y84ab")
@@ -69,3 +80,6 @@ script = ExtResource("10_87s3y")
 
 [node name="Attack03_On_Floor" type="Node" parent="StateMachine"]
 script = ExtResource("11_gmcab")
+
+[node name="Hurt" type="Node" parent="StateMachine"]
+script = ExtResource("12_5uosk")

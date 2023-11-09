@@ -18,7 +18,7 @@ var current_scale:Vector2
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	child_node_for_jumping = get_node("../../Area2D_PlayerBody")
-	shadow_sprite2D = get_node("../../CollisionShape2D/Location_Foot")
+	shadow_sprite2D = get_node("../../CollisionShape2D_Foot/Location_Foot")
 	#跳至最高点的时间
 	max_jump_up_time = abs(jump_velocity / swordman_gravity)
 	#最高点的位移. 注意了，尤其引擎坐标轴的设定原因，算出来的值是负的，要进行纠正以方便理解

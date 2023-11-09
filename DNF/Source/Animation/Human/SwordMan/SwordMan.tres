@@ -240,7 +240,7 @@ animations = [{
 "speed": 10.0
 }, {
 "frames": [{
-"duration": 0.5,
+"duration": 1.0,
 "texture": ExtResource("25_kqbih")
 }, {
 "duration": 1.0,
@@ -249,13 +249,13 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("27_mrsqw")
 }, {
-"duration": 0.5,
+"duration": 1.0,
 "texture": ExtResource("28_db3ub")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("29_fo11n")
 }, {
-"duration": 1.0,
+"duration": 0.5,
 "texture": ExtResource("30_brqn3")
 }],
 "loop": false,
@@ -366,7 +366,7 @@ animations = [{
 "duration": 1.0,
 "texture": ExtResource("56_vq1vq")
 }],
-"loop": true,
+"loop": false,
 "name": &"Hurt",
 "speed": 5.0
 }, {

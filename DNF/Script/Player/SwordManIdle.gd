@@ -12,7 +12,10 @@ func exit():
 	pass
 
 func handle_input(event):
+	
+	
 	if Input.is_action_just_pressed("Jump"):
+#		state_machine.emit_signal("transitioned","Jump")
 		state_machine.emit_signal("transitioned","Jump")
 		return
 	
@@ -30,7 +33,6 @@ func physics_update(delta):
 	axis_value_X = Input.get_axis("ui_left", "ui_right")
 	axis_value_y = Input.get_axis("ui_down","ui_up")
 	if (axis_value_X or axis_value_y):
-		print("即将切换到Run状态")
 		state_machine.emit_signal("transitioned", "Run")
 		return
 	pass
