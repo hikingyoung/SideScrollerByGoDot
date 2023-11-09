@@ -7,6 +7,9 @@ var state_machine:StateMachine = null
 #传入当前玩家，方便后续操作
 var player:Player = null
 var AnimatedSprite2D_Pawn:AnimatedSprite2D = null
+
+var axis_value_X = 0
+var axis_value_y = 0
 #————————————————————
 #下面四个方法都用StaticMachine来间接地统一管理
 #————————————————————
@@ -22,7 +25,10 @@ func enter():
 func exit():
 	print("离开当前状态%s" %name)
 
-	
+
+func handle_input(event):
+	pass
+
 #处于这个状态时要一直更新的动作	
 #这里的update执行与否受状态机控制。
 #如果不自己写而是调用系统自身的 _process则不受控制而无法管理

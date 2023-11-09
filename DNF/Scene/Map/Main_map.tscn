@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dbosb8nra1xkc"]
 
-[ext_resource type="PackedScene" uid="uid://dw4k67kiw74qq" path="res://DNF/Scene/Player/swordman.tscn" id="3_sk4cv"]
+[ext_resource type="PackedScene" uid="uid://dw4k67kiw74qq" path="res://DNF/Scene/Player/SwordMan.tscn" id="3_sk4cv"]
 [ext_resource type="Texture2D" uid="uid://bi073qvywotsu" path="res://DNF/Source/Sprite2D/DNFRoom.png" id="4_xw2su"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1ap8r"]

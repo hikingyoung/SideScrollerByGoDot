@@ -4,6 +4,8 @@ class_name StateMachine
 signal transitioned(new_state_name:String)
 
 #先设置一下常规的人物可能状态
+#在State的enter()中只设置需要变成true的量，不设置需要变成false的量
+#在exit()中只设置需要变成false的量，不设置需要变成true的量
 #————————————
 #处于地面，多指静止状态
 var is_on_floor = true
@@ -56,7 +58,7 @@ func _ready():
 
 
 func _input(event):
-#	current_state._input(event)
+	current_state.handle_input(event)
 	pass
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
@@ -75,10 +77,8 @@ func TransitionTo(newState:String):
 	#这里之前报错，因为后面获得的是节点，前面是State类的对象，类型不匹配
 	#但是现在又不报错了
 	var new_node = get_node(newState)
-	print("当前的状态是：")
-	print(current_state)
-	print("新的状态是：")
-	print(new_node)
+#	print("当前的状态是%s" %current_state)
+#	print("新的状态是%s" %new_node)
 	if new_node:
 		current_state = new_node
 		current_state.enter()
