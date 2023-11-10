@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqbfbuld2lo8h"]
+
+[ext_resource type="Script" path="res://DNF/Script/Hostile/Body.gd" id="2_gaigw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2fiw"]
+size = Vector2(99.75, 37.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlaco"]
+size = Vector2(80, 47.3438)
+
+[node name="Hostile" type="Node2D"]
+
+[node name="Foot" type="Area2D" parent="."]
+
+[node name="FootShape" type="CollisionShape2D" parent="Foot"]
+shape = SubResource("RectangleShape2D_d2fiw")
+
+[node name="Body" type="Area2D" parent="."]
+script = ExtResource("2_gaigw")
+
+[node name="BodyShape" type="CollisionShape2D" parent="Body"]
+position = Vector2(0, -120)
+shape = SubResource("RectangleShape2D_mlaco")
+
+[connection signal="area_entered" from="Foot" to="Body" method="_on_foot_area_entered"]
+[connection signal="area_exited" from="Foot" to="Body" method="_on_foot_area_exited"]
+[connection signal="area_entered" from="Body" to="Body" method="_on_area_entered"]

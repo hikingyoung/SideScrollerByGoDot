@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://dw4k67kiw74qq"]
+[gd_scene load_steps=17 format=3 uid="uid://dw4k67kiw74qq"]
 
 [ext_resource type="Script" path="res://DNF/Script/SwordManRootNode_Foot.gd" id="1_aqrs2"]
 [ext_resource type="Texture2D" uid="uid://bymer10hqpqfg" path="res://DNF/Source/Sprite2D/img_location.png" id="2_ab4x4"]
 [ext_resource type="Script" path="res://DNF/Script/SwordManChildNode_Body.gd" id="2_xevqd"]
 [ext_resource type="SpriteFrames" uid="uid://b16xnjsq8adc8" path="res://DNF/Source/Animation/Human/SwordMan/SwordMan.tres" id="3_bt81j"]
+[ext_resource type="Script" path="res://DNF/Script/Player/Area2D_PlayerFoot.gd" id="3_eruu7"]
 [ext_resource type="Script" path="res://DNF/Script/Player/StateMachine.gd" id="4_y84ab"]
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordManIdle.gd" id="5_7fd11"]
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordManRun.gd" id="6_ots3m"]
@@ -17,7 +18,7 @@
 size = Vector2(20, 5.50562)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1to7y"]
-size = Vector2(20, 5.5955)
+size = Vector2(86, 5.5955)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_up6v2"]
 size = Vector2(11.3333, 29.7753)
@@ -36,10 +37,11 @@ scale = Vector2(0.039, 0.01)
 texture = ExtResource("2_ab4x4")
 
 [node name="Area2D_PlayerFoot" type="Area2D" parent="."]
-scale = Vector2(1, 1)
+script = ExtResource("3_eruu7")
 
 [node name="Collision_1st" type="CollisionShape2D" parent="Area2D_PlayerFoot"]
 position = Vector2(0, 16)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_1to7y")
 
 [node name="Area2D_PlayerBody" type="Area2D" parent="."]
@@ -83,3 +85,5 @@ script = ExtResource("11_gmcab")
 
 [node name="Hurt" type="Node" parent="StateMachine"]
 script = ExtResource("12_5uosk")
+
+[connection signal="area_entered" from="Area2D_PlayerFoot" to="Area2D_PlayerFoot" method="_on_area_entered"]
