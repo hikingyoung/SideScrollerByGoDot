@@ -1,0 +1,67 @@
+[gd_resource type="SpriteFrames" load_steps=10 format=3 uid="uid://ceiqjjoo52jh3"]
+
+[ext_resource type="Texture2D" uid="uid://c85a3dtt11pu1" path="res://DNF/Source/Animation/Monster/Fire_Skull_Files/PNG/fire_skull.png" id="1_d8nvw"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6ggt"]
+atlas = ExtResource("1_d8nvw")
+region = Rect2(0, 0, 96, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qrax"]
+atlas = ExtResource("1_d8nvw")
+region = Rect2(96, 0, 96, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xb8qm"]
+atlas = ExtResource("1_d8nvw")
+region = Rect2(192, 0, 96, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ekvx2"]
+atlas = ExtResource("1_d8nvw")
+region = Rect2(288, 0, 96, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ima45"]
+atlas = ExtResource("1_d8nvw")
+region = Rect2(384, 0, 96, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rfux"]
+atlas = ExtResource("1_d8nvw")
+region = Rect2(480, 0, 96, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_llhss"]
+atlas = ExtResource("1_d8nvw")
+region = Rect2(576, 0, 96, 112)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ebhfn"]
+atlas = ExtResource("1_d8nvw")
+region = Rect2(672, 0, 96, 112)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6ggt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qrax")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xb8qm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ekvx2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ima45")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rfux")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_llhss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ebhfn")
+}],
+"loop": true,
+"name": &"skull_fly",
+"speed": 5.0
+}]

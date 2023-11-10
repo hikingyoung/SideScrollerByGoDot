@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dog77icantjet"
-path="res://.godot/imported/fire-skull-no-fire.png-48ec944d3d03b520ed036046031390df.ctex"
+path="res://.godot/imported/fire_skull_no_fire.png-22b9c7357759e3a7e11ffcb318e71b83.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DNF/Source/Animation/Monster/Fire-Skull-Files/PNG/fire-skull-no-fire.png"
-dest_files=["res://.godot/imported/fire-skull-no-fire.png-48ec944d3d03b520ed036046031390df.ctex"]
+source_file="res://DNF/Source/Animation/Monster/Fire_Skull_Files/PNG/fire_skull_no_fire.png"
+dest_files=["res://.godot/imported/fire_skull_no_fire.png-22b9c7357759e3a7e11ffcb318e71b83.ctex"]
 
 [params]
 

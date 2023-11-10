@@ -1,0 +1,64 @@
+[gd_scene load_steps=8 format=3 uid="uid://wndie0fsrs8e"]
+
+[ext_resource type="Script" path="res://DNF/Script/Hostile/Body.gd" id="1_lntce"]
+[ext_resource type="Script" path="res://DNF/Script/Hostile/skull_projectile.gd" id="1_vt33s"]
+[ext_resource type="SpriteFrames" uid="uid://ceiqjjoo52jh3" path="res://DNF/Source/Animation/Monster/Fire_Skull_Files/PNG/fire_skull_sprite_frames.tres" id="2_7nubu"]
+[ext_resource type="Texture2D" uid="uid://bymer10hqpqfg" path="res://DNF/Source/Sprite2D/img_location.png" id="4_o84r7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2fiw"]
+size = Vector2(242, 37.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlaco"]
+size = Vector2(60, 72)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5o6um"]
+size = Vector2(64, 44)
+
+[node name="projectile" type="Node2D"]
+script = ExtResource("1_vt33s")
+
+[node name="Hostile" type="Node2D" parent="."]
+
+[node name="Foot" type="Area2D" parent="Hostile"]
+collision_layer = 16
+
+[node name="FootShape" type="CollisionShape2D" parent="Hostile/Foot"]
+shape = SubResource("RectangleShape2D_d2fiw")
+
+[node name="Body" type="Area2D" parent="Hostile"]
+light_mask = 4
+visibility_layer = 16
+position = Vector2(0, 39)
+collision_layer = 32
+collision_mask = 2
+script = ExtResource("1_lntce")
+
+[node name="BodyShape" type="CollisionShape2D" parent="Hostile/Body"]
+position = Vector2(0, -120)
+shape = SubResource("RectangleShape2D_mlaco")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Hostile/Body"]
+position = Vector2(3, -132)
+sprite_frames = ExtResource("2_7nubu")
+animation = &"skull_fly"
+autoplay = "skull_fly"
+frame_progress = 0.708183
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-500, 0)
+collision_layer = 0
+collision_mask = 256
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_5o6um")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+self_modulate = Color(1, 0.85098, 0, 1)
+scale = Vector2(0.128906, 0.0898438)
+texture = ExtResource("4_o84r7")
+
+[connection signal="area_entered" from="Hostile/Foot" to="Hostile/Body" method="_on_foot_area_entered" flags=18]
+[connection signal="area_exited" from="Hostile/Foot" to="Hostile/Body" method="_on_foot_area_exited" flags=18]
+[connection signal="area_entered" from="Hostile/Body" to="Hostile/Body" method="_on_area_entered" flags=18]
+[connection signal="area_exited" from="Hostile/Body" to="Hostile/Body" method="_on_area_exited" flags=18]
+[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

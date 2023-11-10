@@ -76,7 +76,7 @@ Attack={
 
 [layer_names]
 
-2d_render/layer_2="ally_foot"
-2d_render/layer_3="ally_body"
-2d_render/layer_4="hostile_foot"
-2d_render/layer_5="hostile_body"
+2d_physics/layer_1="ally_foot"
+2d_physics/layer_2="ally_body"
+2d_physics/layer_5="hostile_foot"
+2d_physics/layer_6="hostile_body"
