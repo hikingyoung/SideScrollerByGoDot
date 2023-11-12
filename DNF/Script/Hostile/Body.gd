@@ -24,8 +24,8 @@ func _on_foot_area_entered(area):
 
 
 func _on_foot_area_exited(area):
-	if foot_collision_list.has(area.Body):
-		foot_collision_list.erase(area.Body)
+	#无需使用array.has()方法，因为系统会在erase时自动判断有效性，没有时什么都不发生
+	foot_collision_list.erase(area.Body)
 	print("有obj退出")
 	var dic_size = foot_collision_list.size()
 	print("当前数组里还剩%s个元素" %dic_size)
@@ -42,6 +42,7 @@ func _on_area_entered(area):
 	#被碰撞到了，应该写玩家的硬直、扣血等逻辑	
 	if foot_collision_list.has(area):
 		print("子弹击中了%s" %area)
+		#只要求对方有be_hit信号即可，做到了解耦。
 		area.emit_signal("be_hit", 10)
 		pass
 	pass # Replace with function body.

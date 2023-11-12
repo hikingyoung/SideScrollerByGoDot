@@ -1,4 +1,15 @@
+#这个判定场景主要用于常规人物，常规弹道等的判定
+#第一步先判定地面的足部框能不能碰撞，类似3D游戏中的XY平面判定，类似天空视角topdown
+#第二步判定地上的身体框能不能碰撞，类似3D游戏中的XZ平面判定，视角类似侧面平台跳跃
+#已知缺陷1：
+#1.大表面积低身位的怪，如像地毯一样的怪，Body设置得大，空中技能打到会不合常理。
+#2.领域技能会导致无法跳过，如熔岩药瓶，或天帷禁地掉在地表的岩液
+#3.第1次判定会有上下沿站位问题。打点低的技能在下沿可能打不到怪；打点高的技能在上沿同理；3D世界不会发生
+#4.为了解决第3点，可以把Body碰撞框故意拉大，但这将导致出现2中的跳跃问题。在下沿需要跳更高的高度才能跃过，甚至上能跳过下跳不过
+#优化方案：第一段碰撞保留，第二次判定由碰撞变成纯粹比较数值，跳跃组件的y坐标
+
 extends State
+
 @export var jump_velocity:float = -350.00
 @export var swordman_gravity:float = 980
 #一般来说跳跃位移要短一些，但也可以保持与地面位移一致
@@ -27,7 +38,7 @@ func _ready():
 func enter():
 	state_machine.is_in_air = true
 	state_machine.is_jumping = true
-	AnimatedSprite2D_Pawn.play("JumpAndFall")
+	AnimatedSprite2D_Pawn.play("jump_76_83")
 	pass
 
 func exit():

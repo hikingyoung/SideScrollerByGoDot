@@ -4,13 +4,16 @@ extends State
 func enter():
 	state_machine.is_on_floor = true
 	print("进入了状态%s"%name)
-	AnimatedSprite2D_Pawn.play("Run")
+	AnimatedSprite2D_Pawn.play("run_18_21")
 	#下面这串代码用来解决这种情况：向前跳跃，但在落地前，按住向后的按键。不写下面的代码，落地后将会退着跑
 	if Input.is_action_pressed("ui_right"):
 		AnimatedSprite2D_Pawn.flip_h = false
+		Animated_Weapon.flip_h = false
+		Animated_Weapon.position = Vector2(-2,-10)
 	if Input.is_action_pressed("ui_left"):
 		AnimatedSprite2D_Pawn.flip_h = true
-	
+		Animated_Weapon.flip_h = true
+		Animated_Weapon.position = Vector2(70,-10)
 func exit():
 	state_machine.is_on_floor = false
 	player.velocity.x = move_toward(player.velocity.x, 0 , 300)
@@ -23,12 +26,13 @@ func handle_input(event):
 	if event.is_action_pressed("ui_right"):
 		#为false时面向右
 		AnimatedSprite2D_Pawn.flip_h = false
-
+		Animated_Weapon.flip_h = false
+		Animated_Weapon.position = Vector2(-2,-10)
 	if event.is_action_pressed("ui_left"):
 		#为true时面向左
 		AnimatedSprite2D_Pawn.flip_h = true
-	
-
+		Animated_Weapon.flip_h = true
+		Animated_Weapon.position = Vector2(70,-10)
 	#跑动状态也能切换到跳
 	if Input.is_action_just_pressed("Jump"):
 		print("Jump被按了")

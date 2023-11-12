@@ -1,0 +1,269 @@
+[gd_resource type="SpriteFrames" load_steps=52 format=3 uid="uid://bsernd4nxpouy"]
+
+[ext_resource type="Texture2D" uid="uid://bglvo6vk2tgvi" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/30.png" id="1_gb48q"]
+[ext_resource type="Texture2D" uid="uid://d4cr540mpohys" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/29.png" id="2_hf6cr"]
+[ext_resource type="Texture2D" uid="uid://xwalmg6roekl" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/71.png" id="3_yxtii"]
+[ext_resource type="Texture2D" uid="uid://b2dxk8182vtr" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/72.png" id="4_aupgm"]
+[ext_resource type="Texture2D" uid="uid://b451x55qc3y14" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/73.png" id="5_m2iwf"]
+[ext_resource type="Texture2D" uid="uid://cvb54wqas0clv" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/74.png" id="6_jo5l3"]
+[ext_resource type="Texture2D" uid="uid://cwwx861ohd4b1" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/75.png" id="7_vtvqg"]
+[ext_resource type="Texture2D" uid="uid://ckuje1jnyjvct" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/35.png" id="8_7tmkh"]
+[ext_resource type="Texture2D" uid="uid://dt1i0xq2apmea" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/36.png" id="9_pb2g3"]
+[ext_resource type="Texture2D" uid="uid://c5qoxtmyrdeql" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/37.png" id="10_0vly0"]
+[ext_resource type="Texture2D" uid="uid://dousri6yv051y" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/38.png" id="11_ml3xd"]
+[ext_resource type="Texture2D" uid="uid://g8bnaqu0ufe" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/39.png" id="12_mhw3e"]
+[ext_resource type="Texture2D" uid="uid://bj3duv3pf51k4" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/40.png" id="13_nipc0"]
+[ext_resource type="Texture2D" uid="uid://cpg2ml4h3wlss" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/41.png" id="14_1b6iq"]
+[ext_resource type="Texture2D" uid="uid://br51qvd23dblj" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/128.png" id="15_n8i0w"]
+[ext_resource type="Texture2D" uid="uid://bh7qsryo3ce0b" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/129.png" id="16_whd3x"]
+[ext_resource type="Texture2D" uid="uid://l22i2yg5pbpt" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/130.png" id="17_dt4ta"]
+[ext_resource type="Texture2D" uid="uid://btbr8871ejcux" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/131.png" id="18_5j388"]
+[ext_resource type="Texture2D" uid="uid://bqnxpn8p2ppey" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/132.png" id="19_72uiy"]
+[ext_resource type="Texture2D" uid="uid://ddsfhny3alvq1" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/133.png" id="20_iti85"]
+[ext_resource type="Texture2D" uid="uid://xe5m0or0jufx" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/134.png" id="21_8slof"]
+[ext_resource type="Texture2D" uid="uid://cswlxsfyedt12" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/10.png" id="22_gsk8v"]
+[ext_resource type="Texture2D" uid="uid://bfkx3p264lbak" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/11.png" id="23_pj6b3"]
+[ext_resource type="Texture2D" uid="uid://bjgvdbb1nqnwj" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/12.png" id="24_6y43h"]
+[ext_resource type="Texture2D" uid="uid://cqf8rk7uyplq3" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/13.png" id="25_fsjvq"]
+[ext_resource type="Texture2D" uid="uid://b2rt13pd78n56" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/14.png" id="26_ajop4"]
+[ext_resource type="Texture2D" uid="uid://dvi5eajcjjnh0" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/15.png" id="27_2qlia"]
+[ext_resource type="Texture2D" uid="uid://dt25ashk21urd" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/16.png" id="28_6bdkq"]
+[ext_resource type="Texture2D" uid="uid://dq26ptbw7wt3k" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/17.png" id="29_g86yk"]
+[ext_resource type="Texture2D" uid="uid://bjajs4ykc1j1s" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/76.png" id="30_kwxuf"]
+[ext_resource type="Texture2D" uid="uid://b5nkmay0rgrej" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/77.png" id="31_kj7nm"]
+[ext_resource type="Texture2D" uid="uid://bt6iajpbo2uxv" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/78.png" id="32_glxdl"]
+[ext_resource type="Texture2D" uid="uid://cn2e68q5buhb1" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/79.png" id="33_s040n"]
+[ext_resource type="Texture2D" uid="uid://bx4dq86hp66ug" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/80.png" id="34_u7ied"]
+[ext_resource type="Texture2D" uid="uid://b88urwesshe7s" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/81.png" id="35_sb2ik"]
+[ext_resource type="Texture2D" uid="uid://dlcgy13ggfqpb" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/82.png" id="36_k52te"]
+[ext_resource type="Texture2D" uid="uid://cir60bnevufux" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/83.png" id="37_ap2cc"]
+[ext_resource type="Texture2D" uid="uid://cghm03n26icgn" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/18.png" id="38_mrfih"]
+[ext_resource type="Texture2D" uid="uid://vpa568qqlyx5" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/19.png" id="39_4tijo"]
+[ext_resource type="Texture2D" uid="uid://y8sps4egl8n7" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/20.png" id="40_d21xx"]
+[ext_resource type="Texture2D" uid="uid://ca30hn7prm5mt" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/21.png" id="41_x6s6d"]
+[ext_resource type="Texture2D" uid="uid://b5hd2q33h4adi" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/0.png" id="42_tk202"]
+[ext_resource type="Texture2D" uid="uid://d101ebdbyq6ex" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/1.png" id="43_uncwa"]
+[ext_resource type="Texture2D" uid="uid://cd2vx43i5n70s" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/2.png" id="44_nbg3j"]
+[ext_resource type="Texture2D" uid="uid://crlaa6nglefie" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/3.png" id="45_dsjbm"]
+[ext_resource type="Texture2D" uid="uid://c7nuq6bsfwqkd" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/4.png" id="46_qgigi"]
+[ext_resource type="Texture2D" uid="uid://dq37c32mdelms" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/5.png" id="47_q3o8f"]
+[ext_resource type="Texture2D" uid="uid://bdaq4fqpedr8q" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/6.png" id="48_u53et"]
+[ext_resource type="Texture2D" uid="uid://df7wn372qdym8" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/7.png" id="49_gfjus"]
+[ext_resource type="Texture2D" uid="uid://bxg70gil45k6s" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/8.png" id="50_ee0xv"]
+[ext_resource type="Texture2D" uid="uid://cbtywutdo5mu0" path="res://DNF/Source/Animation/Human/Mage/Weapon/staff_purple/9.png" id="51_5qixg"]
+
+[resource]
+resource_local_to_scene = true
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_gb48q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hf6cr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hf6cr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hf6cr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_hf6cr")
+}],
+"loop": true,
+"name": &"attack1st_100_104",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_yxtii")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_aupgm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_m2iwf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_jo5l3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_vtvqg")
+}],
+"loop": true,
+"name": &"attack2nd_71_75",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("8_7tmkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_pb2g3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0vly0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ml3xd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_mhw3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_nipc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_1b6iq")
+}],
+"loop": true,
+"name": &"attack3rd_35_41",
+"speed": 7.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("15_n8i0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_whd3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_dt4ta")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_5j388")
+}],
+"loop": true,
+"name": &"be_hit_128_131",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("19_72uiy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_iti85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_8slof")
+}],
+"loop": false,
+"name": &"death_132_134",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_gsk8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_pj6b3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_6y43h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_fsjvq")
+}],
+"loop": true,
+"name": &"idle_10_13",
+"speed": 4.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("26_ajop4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_2qlia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_6bdkq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_g86yk")
+}],
+"loop": true,
+"name": &"idle_in_battle_14_17",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("30_kwxuf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_kj7nm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_glxdl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_s040n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_u7ied")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_sb2ik")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_k52te")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_ap2cc")
+}],
+"loop": true,
+"name": &"jump_76_83",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("38_mrfih")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_4tijo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_d21xx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_x6s6d")
+}],
+"loop": true,
+"name": &"run_18_21",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_tk202")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uncwa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_nbg3j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_dsjbm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_qgigi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_q3o8f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_u53et")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_gfjus")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_ee0xv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_5qixg")
+}],
+"loop": true,
+"name": &"walk_0_9",
+"speed": 8.0
+}]

@@ -45,12 +45,14 @@ func _ready():
 	#transitioned.connect(Callable(self, "TransitionTo"))
 	self.connect("transitioned", Callable(self, "TransitionTo"))
 	var AnimatedSprite2D_Node = get_node("../Area2D_PlayerBody/AnimatedSprite2D_Body")
+	var animation_weapon  = get_node("../Area2D_PlayerBody/AnimatedSprite2D_Body/AnimatedSprite2D_Weapon")
 	#给所有子组件内的state_machine指定对象为我
 	for child in get_children():
 		if child is State:
 			child.state_machine = self
 			child.player = owner
 			child.AnimatedSprite2D_Pawn = AnimatedSprite2D_Node
+			child.Animated_Weapon = animation_weapon
 	#调用一下默认状态的enter工作，执行一些初始化。上面已经选定了默认是Idle
 	if current_state:
 		current_state.enter()

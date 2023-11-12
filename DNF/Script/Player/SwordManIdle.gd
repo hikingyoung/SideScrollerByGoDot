@@ -3,7 +3,7 @@ extends State
 func enter():
 	print("进入了状态%s"%name)
 	state_machine.is_on_floor = true
-	AnimatedSprite2D_Pawn.play("Idle_Normal")
+	AnimatedSprite2D_Pawn.play("idle_10_13")
 
 
 func exit():

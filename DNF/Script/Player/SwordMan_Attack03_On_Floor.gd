@@ -12,7 +12,7 @@ func enter():
 	print("进入了状态%s"%name)
 	state_machine.is_in_battle = true
 	state_machine.is_on_floor = true
-	AnimatedSprite2D_Pawn.play("Attack_Default03")
+	AnimatedSprite2D_Pawn.play("attack3rd_35_41")
 	#创建计时器，创建成功后将自动运行
 	var timer = get_tree().create_timer(max_anim_time,false, true)
 	#绑定默认的信号

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://k83s0ftfobd8"]
+
+[ext_resource type="SpriteFrames" uid="uid://bsernd4nxpouy" path="res://DNF/Source/Animation/Human/Mage/Weapon/Atlas/dnf_mage_weaon_staff_purple.tres" id="1_atoeo"]
+
+[node name="Node" type="Node"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("1_atoeo")
+animation = &"idle_10_13"

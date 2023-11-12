@@ -6,7 +6,7 @@ func enter():
 	state_machine.is_taking_hurt = true
 	#在休闲帧中处理，未来可能有隐患，先在这里标记一下
 	AnimatedSprite2D_Pawn.set_self_modulate(Color8(255,150,150,255))
-	AnimatedSprite2D_Pawn.play("Hurt")
+	AnimatedSprite2D_Pawn.play("be_hit_128_131")
 	var timer = get_tree().create_timer(recover_time, 0)
 	timer.connect("timeout", Callable(self, "recovering"))
 func exit():

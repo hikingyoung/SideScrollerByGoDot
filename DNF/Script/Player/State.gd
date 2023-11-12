@@ -7,7 +7,7 @@ var state_machine:StateMachine = null
 #传入当前玩家，方便后续操作
 var player:Player = null
 var AnimatedSprite2D_Pawn:AnimatedSprite2D = null
-
+var Animated_Weapon:AnimatedSprite2D = null
 var axis_value_X = 0
 var axis_value_y = 0
 #————————————————————
