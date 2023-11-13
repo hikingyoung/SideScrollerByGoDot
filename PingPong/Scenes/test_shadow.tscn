@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b8e3rfdydori1"]
+
+[ext_resource type="PackedScene" uid="uid://dfbabfte6eqwh" path="res://PingPong/Scenes/shadow_player.tscn" id="1_casss"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2ip45"]
+size = Vector2(1290, 36)
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_casss")]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(202, 668)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(366, -186)
+shape = SubResource("RectangleShape2D_2ip45")

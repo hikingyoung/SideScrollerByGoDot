@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://dg1x185i5ie4l"]
+
+[ext_resource type="Texture2D" uid="uid://c4e5nt24u6u2f" path="res://DNF/Source/Sprite2D/icon.svg" id="1_2sr8i"]
+[ext_resource type="Script" path="res://PingPong/GDScripts/ghost.gd" id="2_q1dnp"]
+
+[node name="Ghost" type="Sprite2D"]
+modulate = Color(0.462745, 0.462745, 0.462745, 1)
+show_behind_parent = true
+texture = ExtResource("1_2sr8i")
+script = ExtResource("2_q1dnp")
