@@ -6,7 +6,7 @@
 size = Vector2(242, 37.875)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mlaco"]
-size = Vector2(60, 72)
+size = Vector2(72, 132)
 
 [node name="Hostile" type="Node2D"]
 

@@ -1,0 +1,63 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0djlmy8n1g1b"]
+
+[ext_resource type="Texture2D" uid="uid://bymer10hqpqfg" path="res://DNF/Source/Sprite2D/img_location.png" id="1_6y2k2"]
+[ext_resource type="Script" path="res://DNF/Script/Hostile/Body.gd" id="2_15vro"]
+[ext_resource type="SpriteFrames" uid="uid://dle2xl2w3lewn" path="res://DNF/Source/Animation/Monster/Ghost_Files/ghost.tres" id="3_alj1a"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2fiw"]
+size = Vector2(242, 37.875)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mlaco"]
+size = Vector2(72, 132)
+
+[node name="Ghost" type="Node2D"]
+
+[node name="Hostile" type="Node2D" parent="."]
+
+[node name="Foot" type="Area2D" parent="Hostile"]
+collision_layer = 16
+
+[node name="FootShape" type="CollisionShape2D" parent="Hostile/Foot"]
+shape = SubResource("RectangleShape2D_d2fiw")
+
+[node name="Location_Foot" type="Sprite2D" parent="Hostile/Foot"]
+self_modulate = Color(1, 0.109804, 0.109804, 1)
+scale = Vector2(0.152344, 0.0742188)
+texture = ExtResource("1_6y2k2")
+
+[node name="Body" type="Area2D" parent="Hostile"]
+light_mask = 4
+visibility_layer = 16
+collision_layer = 32
+collision_mask = 2
+script = ExtResource("2_15vro")
+
+[node name="BodyShape" type="CollisionShape2D" parent="Hostile/Body"]
+position = Vector2(0, -120)
+shape = SubResource("RectangleShape2D_mlaco")
+
+[node name="Anim_Body" type="AnimatedSprite2D" parent="Hostile/Body"]
+position = Vector2(0, -120)
+scale = Vector2(3, 3)
+sprite_frames = ExtResource("3_alj1a")
+animation = &"idle"
+frame_progress = 0.213245
+
+[node name="StateMachine" type="Node" parent="."]
+
+[node name="idle" type="Node" parent="StateMachine"]
+
+[node name="appear" type="Node" parent="StateMachine"]
+
+[node name="attack" type="Node" parent="StateMachine"]
+
+[node name="dead" type="Node" parent="StateMachine"]
+
+[node name="wander" type="Node" parent="StateMachine"]
+
+[node name="chase" type="Node" parent="StateMachine"]
+
+[connection signal="area_entered" from="Hostile/Foot" to="Hostile/Body" method="_on_foot_area_entered" flags=18]
+[connection signal="area_exited" from="Hostile/Foot" to="Hostile/Body" method="_on_foot_area_exited" flags=18]
+[connection signal="area_entered" from="Hostile/Body" to="Hostile/Body" method="_on_area_entered" flags=18]
+[connection signal="area_exited" from="Hostile/Body" to="Hostile/Body" method="_on_area_exited" flags=18]

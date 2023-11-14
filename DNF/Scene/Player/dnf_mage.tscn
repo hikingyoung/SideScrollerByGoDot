@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://ba0uodgcmckqe"]
+[gd_scene load_steps=18 format=3 uid="uid://ba0uodgcmckqe"]
 
 [ext_resource type="Script" path="res://DNF/Script/SwordManRootNode_Foot.gd" id="1_sq72d"]
 [ext_resource type="Texture2D" uid="uid://bymer10hqpqfg" path="res://DNF/Source/Sprite2D/img_location.png" id="2_u1xd4"]
@@ -14,7 +14,6 @@
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordMan_Attack02_On_Floor.gd" id="11_o124y"]
 [ext_resource type="Script" path="res://DNF/Script/Player/SwordMan_Attack03_On_Floor.gd" id="12_yng62"]
 [ext_resource type="Script" path="res://DNF/Script/Player/swordman_hurt.gd" id="13_hekjc"]
-[ext_resource type="Texture2D" uid="uid://c4e5nt24u6u2f" path="res://DNF/Source/Sprite2D/icon.svg" id="15_wthhe"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yfd3d"]
 size = Vector2(20, 5.50562)
@@ -100,15 +99,5 @@ script = ExtResource("12_yng62")
 [node name="Hurt" type="Node" parent="StateMachine"]
 script = ExtResource("13_hekjc")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(0, -40)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("15_wthhe")
-
-[node name="Timer" type="Timer" parent="."]
-wait_time = 0.15
-autostart = true
-
 [connection signal="area_entered" from="Area2D_PlayerFoot" to="Area2D_PlayerFoot" method="_on_area_entered"]
 [connection signal="be_hit" from="Area2D_PlayerBody" to="." method="_on_area_2d_player_body_be_hit"]
-[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

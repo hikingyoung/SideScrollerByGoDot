@@ -10,14 +10,13 @@ size = Vector2(1250, 47)
 [node name="MainMap" type="Node2D"]
 
 [node name="BackgroundImage_Room" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(611, 321)
 scale = Vector2(1.025, 0.86)
 texture = ExtResource("4_xw2su")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_woywd")]
 position = Vector2(248, 403)
-scale = Vector2(3, 3)
+scale = Vector2(5, 5)
 
 [node name="StaticBody2D_Bottom" type="StaticBody2D" parent="."]
 position = Vector2(575, 676)

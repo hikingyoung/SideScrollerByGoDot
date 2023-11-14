@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boca4vb57qcdw"
-path="res://.godot/imported/ghost-vanish.png-8ba4dab8a228e13a18c345d4b0f8f400.ctex"
+uid="uid://c5yocc2adbmd"
+path="res://.godot/imported/ghost_shriek.png-8e30c580eb1a791b5fbb40984e580e05.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DNF/Source/Animation/Monster/Ghost-Files/PNG/ghost-vanish.png"
-dest_files=["res://.godot/imported/ghost-vanish.png-8ba4dab8a228e13a18c345d4b0f8f400.ctex"]
+source_file="res://DNF/Source/Animation/Monster/Ghost_Files/PNG/ghost_shriek.png"
+dest_files=["res://.godot/imported/ghost_shriek.png-8e30c580eb1a791b5fbb40984e580e05.ctex"]
 
 [params]
 

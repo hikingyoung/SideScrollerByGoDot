@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5yocc2adbmd"
-path="res://.godot/imported/ghost-shriek.png-85747b79d2eab0353dd5f870dbf27123.ctex"
+uid="uid://m8tuk0pn0o58"
+path="res://.godot/imported/ghost_hurt.png-26a0aa10134c522943133511b5783e25.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DNF/Source/Animation/Monster/Ghost-Files/PNG/ghost-shriek.png"
-dest_files=["res://.godot/imported/ghost-shriek.png-85747b79d2eab0353dd5f870dbf27123.ctex"]
+source_file="res://DNF/Source/Animation/Monster/Ghost_Files/PNG/ghost_hurt.png"
+dest_files=["res://.godot/imported/ghost_hurt.png-26a0aa10134c522943133511b5783e25.ctex"]
 
 [params]
 

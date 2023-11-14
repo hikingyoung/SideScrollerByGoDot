@@ -1,9 +1,10 @@
 [gd_scene load_steps=2 format=3 uid="uid://k83s0ftfobd8"]
 
-[ext_resource type="SpriteFrames" uid="uid://bsernd4nxpouy" path="res://DNF/Source/Animation/Human/Mage/Weapon/Atlas/dnf_mage_weaon_staff_purple.tres" id="1_atoeo"]
+[ext_resource type="SpriteFrames" uid="uid://dle2xl2w3lewn" path="res://DNF/Source/Animation/Monster/Ghost_Files/ghost.tres" id="1_4ufbi"]
 
 [node name="Node" type="Node"]
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-sprite_frames = ExtResource("1_atoeo")
-animation = &"idle_10_13"
+sprite_frames = ExtResource("1_4ufbi")
+animation = &"be_hit"
+frame_progress = 0.463273

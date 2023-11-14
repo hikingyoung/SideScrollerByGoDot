@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2owuugmtqx0f"
-path="res://.godot/imported/ghost-appears.png-9deeb91d5a43f9b3f1370d4d9bfd4343.ctex"
+uid="uid://boca4vb57qcdw"
+path="res://.godot/imported/ghost_vanish.png-9747d15153953306f27c00c5aeda2892.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://DNF/Source/Animation/Monster/Ghost-Files/PNG/ghost-appears.png"
-dest_files=["res://.godot/imported/ghost-appears.png-9deeb91d5a43f9b3f1370d4d9bfd4343.ctex"]
+source_file="res://DNF/Source/Animation/Monster/Ghost_Files/PNG/ghost_vanish.png"
+dest_files=["res://.godot/imported/ghost_vanish.png-9747d15153953306f27c00c5aeda2892.ctex"]
 
 [params]
 
