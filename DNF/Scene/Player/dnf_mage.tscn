@@ -26,7 +26,7 @@ size = Vector2(20, 5.5955)
 size = Vector2(11.3333, 29.7753)
 
 [node name="CharacterBody2D_Root" type="CharacterBody2D"]
-scale = Vector2(3, 3.56)
+scale = Vector2(0.3, 0.3)
 script = ExtResource("1_sq72d")
 
 [node name="CollisionShape2D_Foot" type="CollisionShape2D" parent="."]
@@ -101,7 +101,8 @@ script = ExtResource("12_yng62")
 script = ExtResource("13_hekjc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.3, 0.3)
+position = Vector2(0, -40)
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("15_wthhe")
 
 [node name="Timer" type="Timer" parent="."]

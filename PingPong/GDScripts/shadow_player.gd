@@ -32,14 +32,10 @@ func _physics_process(delta):
 
 
 func add_ghost():
-	if ghost_scene:
-		print("节点有效")
-	else:
-		print("节点不存在")
-	var new_ghost = ghost_scene.instantiate()
-	new_ghost.set_new_position(position)
-	print(get_tree().current_scene)
-	get_tree().current_scene.add_child(new_ghost)
+	var ghost = ghost_scene.instantiate()
+	ghost.set_new_position(position)
+	print(position)
+	get_tree().current_scene.add_child(ghost)
 	return
 
 

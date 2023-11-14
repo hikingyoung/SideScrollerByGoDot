@@ -23,15 +23,14 @@ func _on_area_2d_player_body_be_hit(damage):
 	pass # Replace with function body.
 
 func add_ghost():
-	var new_ghost = ghost_scene.instantiate()
-	if new_ghost:
-		print("dnf_mage 生成的ghost有效")
-	new_ghost.set_new_position(position)
-	new_ghost.set_scale(Vector2(0.3,0.3))
-	print("sprite_2d的postition是%s" %sprite_2d.position)
-	print("new_ghost 的postition是%s" %new_ghost.position)
+	var ghost = ghost_scene.instantiate()
+	print(self.position)
+	ghost.set_scale(Vector2(0.3,0.3))
+	ghost.set_new_position(self.position)
+	ghost.position.y += -120
+	print("ghost 的postition是%s" %ghost.position)
 	#sprite_2d.add_child(new_ghost)
-	get_tree().current_scene.add_child(new_ghost)
+	get_tree().current_scene.add_child(ghost)
 	return
 
 
